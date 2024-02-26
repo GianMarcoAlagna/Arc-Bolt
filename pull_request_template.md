@@ -1,9 +1,9 @@
-#Ticket Name
+# Ticket Name
 
-#Changes
--[] Bug Fix
--[] Feature
--[] None of the above - Explain here ()
+## Changes
+- [ ] Bug Fix
+- [ ] Feature
+- [ ] Other (Explain below)
 
-#Description
+## Description
 Implemented...
