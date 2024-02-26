@@ -1,16 +1,14 @@
 import { useState } from "react";
 // import { invoke } from "@tauri-apps/api/tauri";
 import CodeMirror from "@uiw/react-codemirror";
-import {
-  loadLanguage,
-  langs,
-} from "@uiw/codemirror-extensions-langs";
+import { loadLanguage, langs } from "@uiw/codemirror-extensions-langs";
 import { tags as t } from "@lezer/highlight";
 import { atomoneInit } from "@uiw/codemirror-theme-atomone";
 import "./App.css";
 
 function App() {
   const [code, setCode] = useState("");
+  // TODO add support for changing language, and no language(plain text)
   loadLanguage("javascript");
   langs.javascript();
 
@@ -24,9 +22,9 @@ function App() {
             fontFamily: "arial",
           },
           styles: [
-            { 
-              tag: t.comment, 
-              color: "#6272a4"
+            {
+              tag: t.comment,
+              color: "#6272a4",
             },
           ],
         })}
